@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+
+    <title>Tokyo Station Rainfall</title>
+
+    <link>https://developer.yahoo.co.jp/webapi/map/openlocalplatform/v1/weather.html</link>
+
+    <description>
+      Rainfall information for Tokyo Station
+    </description>
+
+    <item>
+
+      <title>現在、雨は降っていません</title>
+
+      <description><![CDATA[
+Date=2026-07-09 13:15
+Type=observation
+Rainfall=0.0
+IsRaining=false
+Message=現在、雨は降っていません
+]]></description>
+
+      <guid>2026-07-09T04:23:07.315279+00:00</guid>
+
+      <pubDate>Thu, 09 Jul 2026 04:23:07 +0000</pubDate>
+
+    </item>
+
+  </channel>
+</rss>
