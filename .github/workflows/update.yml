@@ -1,0 +1,44 @@
+name: Update Weather RSS
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "2-59/5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Generate RSS
+        env:
+          YAHOO_APPID: ${{ secrets.YAHOO_APPID }}
+        run: python generate_feed.py
+
+      - name: Commit feed.xml
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          git add feed.xml
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update RSS"
+            git push
+          fi
