@@ -15,16 +15,16 @@
       <title>現在、雨が降っています</title>
 
       <description><![CDATA[
-Date=2026-08-13 15:15
+Date=2026-08-13 16:50
 Type=observation
-Rainfall=1.65
+Rainfall=2.13
 IsRaining=true
 Message=現在、雨が降っています
 ]]></description>
 
-      <guid>2026-08-13T06:22:25.198835+00:00</guid>
+      <guid>2026-08-13T07:57:47.915316+00:00</guid>
 
-      <pubDate>Thu, 13 Aug 2026 06:22:25 +0000</pubDate>
+      <pubDate>Thu, 13 Aug 2026 07:57:47 +0000</pubDate>
 
     </item>
 
