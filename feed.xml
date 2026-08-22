@@ -12,19 +12,19 @@
 
     <item>
 
-      <title>現在、雨は降っていません</title>
+      <title>現在、雨が降っています</title>
 
       <description><![CDATA[
-Date=2026-08-22 14:45
+Date=2026-08-22 15:05
 Type=observation
-Rainfall=0.0
-IsRaining=false
-Message=現在、雨は降っていません
+Rainfall=0.45
+IsRaining=true
+Message=現在、雨が降っています
 ]]></description>
 
-      <guid>2026-08-22T05:51:25.802759+00:00</guid>
+      <guid>2026-08-22T06:13:49.775420+00:00</guid>
 
-      <pubDate>Sat, 22 Aug 2026 05:51:25 +0000</pubDate>
+      <pubDate>Sat, 22 Aug 2026 06:13:49 +0000</pubDate>
 
     </item>
 
